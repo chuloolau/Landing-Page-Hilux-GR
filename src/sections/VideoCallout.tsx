@@ -63,7 +63,9 @@ export default function VideoCallout() {
               Amortiguador Monotubo Presurizado con Reservorio Independiente.
               Cuerpo de acero de 55&nbsp;mm, v&aacute;lvula sintetizada de
               50&nbsp;mm y piezas de aluminio anodizado. Ofrece regulaci&oacute;n
-              de altura de porta espiral.
+              de altura de porta espiral y, adem&aacute;s, regulaci&oacute;n de dureza
+              en sus 4 amortiguadores: vas a poder ablandarlos o endurecerlos
+              seg&uacute;n el uso.
             </p>
           </FadeIn>
 

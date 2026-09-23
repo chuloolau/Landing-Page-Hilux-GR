@@ -11,17 +11,17 @@ const PRODUCTS: Product[] = [
   {
     image: '/kit-completo.webp',
     title: 'Baratec Pro',
-    subtitle: 'Kit completo',
+    subtitle: 'Kit completo · 4 regulables',
   },
   {
     image: '/delanteros.webp',
     title: 'Delantero',
-    subtitle: 'Regulable en altura',
+    subtitle: 'Regulable en altura y dureza',
   },
   {
     image: '/traseros.webp',
     title: 'Trasero',
-    subtitle: 'Sin regulación',
+    subtitle: 'Regulable en dureza',
   },
 ];
 

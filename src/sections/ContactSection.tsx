@@ -8,7 +8,7 @@ const WHATSAPP_HREF =
     'Hola, quiero cotizar un kit Baratec para Hilux SRX / GR 2023+.',
   );
 const SHOP_URL =
-  'https://baratecamortiguadores.mitiendanube.com/productos/kitx4-amortiguadores-baratec-s10-2012-high-performance-copia/';
+  'https://baratecamortiguadores.mitiendanube.com/productos/kitx4-amortiguadores-hilux-srx-gr-2024/';
 
 export default function ContactSection() {
   return (
