@@ -73,7 +73,7 @@ export default function ApplicationsSection() {
             className="font-display font-black uppercase leading-[0.88] tracking-[-0.02em] text-ink text-center mb-12 sm:mb-16 md:mb-20"
             style={{ fontSize: 'clamp(2.75rem, 11vw, 11rem)' }}
           >
-            High Performance
+            Baratec Pro
           </h2>
         </FadeIn>
 

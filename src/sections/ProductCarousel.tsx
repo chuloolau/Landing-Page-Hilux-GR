@@ -10,7 +10,7 @@ type Product = {
 const PRODUCTS: Product[] = [
   {
     image: '/kit-completo.webp',
-    title: 'Baratec High Performance',
+    title: 'Baratec Pro',
     subtitle: 'Kit completo',
   },
   {
