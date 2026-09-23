@@ -1,0 +1,23 @@
+# Vercel regenera estas carpetas en su propio build server.
+# No las subimos desde la PC local (evita conflicto con artefactos viejos).
+dist/
+node_modules/
+.vite/
+.cache/
+
+# Archivos de desarrollo / OS / IDE
+.DS_Store
+Thumbs.db
+*.log
+.env.local
+.env.*.local
+
+# Worktrees y archivado interno
+.claude/worktrees/
+_archivo-viejo/
+_assets-fuente/
+
+# Backups de assets pesados que NO van al deploy
+*.original.mp4
+*-original-*.mp4
+public/_originals/

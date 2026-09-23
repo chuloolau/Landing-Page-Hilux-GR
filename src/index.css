@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  background-color: #fafaf7;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
+    'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #0a0a0b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display headings: SF Pro Display on Apple, Inter elsewhere */
+.font-display {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter',
+    'Segoe UI', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+/* Antes: ui-monospace. Cambiado a la misma familia sans-serif del body
+   para que eyebrows, labels y footer mantengan coherencia con la marca. */
+.font-mono {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+    'SF Pro Display', 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+/* Headline gradient: dark → muted gray */
+.brand-gradient {
+  background: linear-gradient(180deg, #0a0a0b 0%, #5c5c5a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Accent solid (lima) */
+.accent-gradient {
+  color: #b8be0b;
+  -webkit-text-fill-color: #b8be0b;
+  background: none;
+}
+
+/* Text selection */
+::selection {
+  background: #dde227;
+  color: #0a0a0b;
+}
+::-moz-selection {
+  background: #dde227;
+  color: #0a0a0b;
+}
+
+/* CTA primary: brighten shadow on hover */
+.cta-primary:hover {
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.45) inset,
+    0 18px 44px -8px rgba(255, 255, 51, 0.55) !important;
+}
+
+/* Nav links FOX-style: bloque lima on hover/active.
+   Usa la misma tipografía del título Hero (font-display + black + uppercase) */
+.nav-link-fox {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.9rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter',
+    'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #0a0a0b;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  border-radius: 2px;
+}
+.nav-link-fox:hover,
+.nav-link-fox:focus-visible {
+  background-color: #dde227;
+  color: #0a0a0b;
+}
+.nav-link-fox.active {
+  background-color: #dde227;
+  color: #0a0a0b;
+}
+@media (min-width: 640px) {
+  .nav-link-fox {
+    font-size: 16px;
+    padding: 0.55rem 1.05rem;
+  }
+}
+
+/* Scrollbar custom (slim, light) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fafaf7;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d0;
+  border-radius: 999px;
+  border: 2px solid #fafaf7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8b8b3;
+}
+
+/* Focus outline accesible */
+*:focus-visible {
+  outline: 2px solid #dde227;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Reveal mask (para headlines tipo Stripe) */
+.mask-reveal {
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Page scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #dde227;
+  transform-origin: 0 50%;
+  z-index: 100;
+}
+
+/* === FeaturesGrid: liquid-glass + marquee + noise overlay === */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.01);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.4px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.15) 20%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0.15) 80%,
+    rgba(255, 255, 255, 0.45) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.animate-marquee-left {
+  animation: marquee-left 22s linear infinite;
+}
+.animate-marquee-right {
+  animation: marquee-right 26s linear infinite;
+}
+
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.55;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 240px 240px;
+}
+
+/* === Optimización mobile ===
+   Pintar secciones solo cuando se acerquen al viewport. Reduce paint cost
+   en celulares con muchas imágenes/videos abajo del fold. */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}
+
+/* === Reduced motion: respetar la preferencia del SO === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  /* Pausar marquees infinitos (consumen CPU constantemente) */
+  .animate-marquee-left,
+  .animate-marquee-right {
+    animation: none !important;
+  }
+}
