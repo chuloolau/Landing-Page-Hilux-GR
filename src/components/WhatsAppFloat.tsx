@@ -4,7 +4,7 @@ import WhatsAppIcon from './WhatsAppIcon';
 const WHATSAPP_HREF =
   'https://wa.me/5493571623675?text=' +
   encodeURIComponent(
-    'Hola, quiero cotizar un kit Baratec para Silverado Z-71.',
+    'Hola, quiero cotizar un kit Baratec para Hilux SRX / GR 2023+.',
   );
 
 export default function WhatsAppFloat() {

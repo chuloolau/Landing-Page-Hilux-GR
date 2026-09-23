@@ -68,3 +68,6 @@ Thumbs.db
 
 # backup local de videos originales (no van a git ni a deploy)
 public/_originals/
+
+# Originales pesados (fotos/videos sin comprimir)
+_assets-fuente/

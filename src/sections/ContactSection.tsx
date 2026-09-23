@@ -5,7 +5,7 @@ import ParallaxBlock from '../components/ParallaxBlock';
 const WHATSAPP_HREF =
   'https://wa.me/5493571623675?text=' +
   encodeURIComponent(
-    'Hola, quiero cotizar un kit Baratec para Silverado Z-71.',
+    'Hola, quiero cotizar un kit Baratec para Hilux SRX / GR 2023+.',
   );
 const SHOP_URL =
   'https://baratecamortiguadores.mitiendanube.com/productos/kitx4-amortiguadores-baratec-s10-2012-high-performance-copia/';

@@ -4,18 +4,18 @@ import LazyVideo from '../components/LazyVideo';
 
 const cases = [
   {
-    src: '/silverado-azul.mp4',
-    label: 'Z-71 Azul',
+    src: '/hilux-srx-taller.mp4',
+    label: 'Hilux SRX 2024',
     description: 'Control de recorrido.',
   },
   {
-    src: '/silverado-gris.mp4',
-    label: 'Z-71 Gris',
+    src: '/hilux-antes-despues.mp4',
+    label: 'Hilux antes y después',
     description: 'Estabilidad en alta y baja velocidad.',
   },
   {
-    src: '/silverado-roja.mp4',
-    label: 'Z-71 Roja',
+    src: '/hilux-gr-instalacion.mp4',
+    label: 'Hilux GR',
     description: 'Mayor adherencia en condiciones adversas.',
   },
 ];

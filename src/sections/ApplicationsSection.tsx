@@ -12,17 +12,17 @@ type Application = {
 const applications: Application[] = [
   {
     title: 'Off road',
-    image: '/silverado-zr2-azul.webp',
-    // Desplazado a la izquierda para sacar el logo Chevy del frame visible
-    objectPosition: '15% 50%',
+    image: '/hilux-srx-offroad.webp',
+    // Encuadre sobre la camioneta (el polvo ocupa la izquierda)
+    objectPosition: '62% 50%',
   },
   {
     title: 'Campo',
-    image: '/2026-slld-ext-gal-05.avif',
+    image: '/hilux-srx-campo.webp',
   },
   {
     title: 'Pick-up',
-    image: '/2026-slld-tow-03-v2.avif',
+    image: '/hilux-gr-pickup.webp',
   },
 ];
 

@@ -48,7 +48,7 @@ export default function ProductCarousel() {
             >
               Nuevo
               <br />
-              <span className="accent-gradient">desarrollo Z-71</span>
+              <span className="accent-gradient">desarrollo Hilux</span>
             </h2>
           </FadeIn>
         </div>

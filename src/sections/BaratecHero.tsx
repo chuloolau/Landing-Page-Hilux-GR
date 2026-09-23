@@ -70,8 +70,8 @@ export default function BaratecHero() {
               className="font-display font-black uppercase leading-[0.95] tracking-[-0.01em] text-ink text-left select-none break-words"
               style={{ fontSize: 'clamp(2rem, 6.5vw, 6.5rem)' }}
             >
-              <span className="block">Z-71</span>
-              <span className="accent-gradient block">SILVERADO</span>
+              <span className="block">SRX · GR</span>
+              <span className="accent-gradient block">HILUX 2023+</span>
               <span className="block">
                 CAMBIA TU MANERA
                 <br />
@@ -81,10 +81,10 @@ export default function BaratecHero() {
           </FadeIn>
         </motion.div>
 
-        {/* Columna derecha — imagen Silverado con parallax */}
+        {/* Columna derecha — imagen Hilux con parallax */}
         <div className="relative w-full h-[55vh] lg:h-auto overflow-hidden bg-bg">
           <motion.img
-            src="/hero-silverado-barro.webp"
+            src="/hero-hilux-gr.webp"
             alt=""
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover"
