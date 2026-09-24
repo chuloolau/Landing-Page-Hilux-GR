@@ -84,12 +84,12 @@ export default function BaratecHero() {
         {/* Columna derecha — imagen Hilux con parallax */}
         <div className="relative w-full h-[55vh] lg:h-auto overflow-hidden bg-bg">
           <motion.img
-            src="/hero-hilux-gr.webp"
+            src="/hero-hilux-srx-roja.webp"
             alt=""
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover"
             style={{
-              objectPosition: '50% 50%',
+              objectPosition: '74% 50%',
               y: imageY,
               scale: imageScale,
             }}

@@ -23,6 +23,8 @@ const applications: Application[] = [
   {
     title: 'Pick-up',
     image: '/hilux-gr-pickup.webp',
+    // La trompa de la GR queda en el tercio izquierdo de la foto
+    objectPosition: '28% 50%',
   },
 ];
 
